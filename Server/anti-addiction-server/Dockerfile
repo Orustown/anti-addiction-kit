@@ -1,4 +1,5 @@
-FROM node:12
+FROM node:18.20.8-alpine
+# RUN npm config set registry https://registry.npmmirror.com
 #设置时区
 ENV TIME_ZONE=Asia/Shanghai
 RUN \
