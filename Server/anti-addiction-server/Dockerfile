@@ -1,5 +1,4 @@
-FROM node:18.20.8-alpine
-# RUN npm config set registry https://registry.npmmirror.com
+FROM alibaba-cloud-linux-3-registry.cn-hangzhou.cr.aliyuncs.com/alinux3/node:20.16
 #设置时区
 ENV TIME_ZONE=Asia/Shanghai
 RUN \
