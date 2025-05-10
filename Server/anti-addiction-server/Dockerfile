@@ -1,6 +1,7 @@
 FROM alibaba-cloud-linux-3-registry.cn-hangzhou.cr.aliyuncs.com/alinux3/node:20.16
 #设置时区
 ENV TIME_ZONE=Asia/Shanghai
+USER root
 RUN \
   mkdir -p /usr/src/app \
 #  && apk add --no-cache tzdata \
@@ -13,4 +14,4 @@ RUN npm i
 COPY . /usr/src/app
 EXPOSE 7001
 
-CMD npm run docker-start
+CMD ["npm", "run", "docker-start"]
